@@ -141,7 +141,7 @@
     "pa11y-test": "start-server-and-test browser-test-server 4001 pa11y-ci"
   },
   "engines": {
-    "node": "12 - 14"
+    "node": "16"
   },
   "repository": "https://github.com/github/docs",
   "standard": {
@@ -155,5 +155,8 @@
       "pre-commit": "node script/prevent-translation-commits.js",
       "pre-push": "npm run prevent-pushes-to-main"
     }
+  },
+  "overrides": {
+    "minimist@<=1.2.6": "1.2.6"
   }
 }
