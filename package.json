@@ -155,5 +155,8 @@
       "pre-commit": "node script/prevent-translation-commits.js",
       "pre-push": "npm run prevent-pushes-to-main"
     }
+  },
+  "overrides": {
+    "minimist@<=1.2.6": "1.2.6"
   }
 }
